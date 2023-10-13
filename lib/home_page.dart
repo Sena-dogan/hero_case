@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
+import 'package:hero_case/widgets/feeling_bubbles.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -62,6 +63,16 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
+          Gap(8),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FeelingBubble(text: 'Love'),
+              FeelingBubble(text: 'Cool'),
+              FeelingBubble(text: 'Happy'),
+              FeelingBubble(text: 'Sad'),
+            ],
+          )
         ],
       ),
     );
