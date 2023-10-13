@@ -23,7 +23,7 @@ class FeelingBubble extends StatelessWidget {
           SizedBox(
             child: Text(
               text,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.black),
             ),
           ),
         ],
