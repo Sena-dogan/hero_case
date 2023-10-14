@@ -14,12 +14,12 @@ class FeelingBubble extends StatelessWidget {
           Container(
             width: 60,
             height: 60,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.grey[500],
+              color: Color(0xFFE3E6EB),
             ),
           ),
-          const Gap(8),
+          const Gap(6),
           SizedBox(
             child: Text(
               text,
