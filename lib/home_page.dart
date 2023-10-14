@@ -3,20 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hero_case/second_page.dart';
 import 'package:hero_case/widgets/bottom_nav_bar.dart';
 import 'package:hero_case/widgets/exercise_part.dart';
 import 'package:hero_case/widgets/feature_container.dart';
 import 'package:hero_case/widgets/feeling_bubbles.dart';
 import 'package:hero_case/widgets/part_row.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   int _current = 0;
   final CarouselController _controller = CarouselController();
   final List<Widget> items = [
@@ -33,6 +34,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              PageRouteBuilder(
+                pageBuilder: (context, animation, secondAnimation) =>
+                    const SecondPage(),
+              ),
+            );
+          },
+          icon: const Icon(
+            Icons.forward_outlined,
+            size: 40,
+          ),
+        ),
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarBrightness: brightness,
           systemStatusBarContrastEnforced: false,
