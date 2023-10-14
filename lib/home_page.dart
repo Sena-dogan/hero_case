@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
+import 'package:hero_case/widgets/bottom_nav_bar.dart';
 import 'package:hero_case/widgets/exercise_part.dart';
 import 'package:hero_case/widgets/feature_container.dart';
 import 'package:hero_case/widgets/feeling_bubbles.dart';
@@ -52,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
           const Gap(16),
         ],
       ),
+      bottomNavigationBar: const BottomNavBar(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -81,13 +83,16 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Gap(size.height * 0.01),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FeelingBubble(text: 'Love'),
-                FeelingBubble(text: 'Cool'),
-                FeelingBubble(text: 'Happy'),
-                FeelingBubble(text: 'Sad'),
+                const FeelingBubble(text: 'Love'),
+                Gap(size.width * 0.04),
+                const FeelingBubble(text: 'Cool'),
+                Gap(size.width * 0.04),
+                const FeelingBubble(text: 'Happy'),
+                Gap(size.width * 0.04),
+                const FeelingBubble(text: 'Sad'),
               ],
             ),
             Gap(size.height * 0.01),
