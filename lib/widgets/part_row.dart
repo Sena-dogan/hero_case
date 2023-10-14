@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PartRow extends StatelessWidget {
   final String text;
@@ -15,7 +16,7 @@ class PartRow extends StatelessWidget {
         const Gap(20),
         Text(
           text,
-          style: const TextStyle(
+          style: GoogleFonts.roboto(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
@@ -23,22 +24,22 @@ class PartRow extends StatelessWidget {
         const Spacer(),
         TextButton(
           onPressed: () {},
-          child: const Row(
+          child: Row(
             children: [
               Text(
                 'See more',
-                style: TextStyle(
+                style: GoogleFonts.roboto(
                     fontSize: 16,
                     color: Colors.green,
                     fontWeight: FontWeight.bold),
               ),
-              Gap(4),
-              Icon(
+              const Gap(4),
+              const Icon(
                 Icons.arrow_forward_ios,
                 size: 16,
                 color: Colors.green,
               ),
-              Gap(10),
+              const Gap(10),
             ],
           ),
         ),

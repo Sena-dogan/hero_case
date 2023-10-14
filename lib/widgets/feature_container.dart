@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FeatureContainer extends StatelessWidget {
   const FeatureContainer({
@@ -25,23 +26,23 @@ class FeatureContainer extends StatelessWidget {
               children: [
                 Text(
                   "Positive vibes",
-                  style: TextStyle(
+                  style: GoogleFonts.roboto(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                     color: Colors.blueGrey[800],
                   ),
                 ),
                 const Gap(8),
-                const Text(
+                Text(
                   "Boost your mood with",
-                  style: TextStyle(
+                  style: GoogleFonts.roboto(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                const Text(
+                Text(
                   "positive vibes",
-                  style: TextStyle(
+                  style: GoogleFonts.roboto(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
@@ -63,9 +64,9 @@ class FeatureContainer extends StatelessWidget {
                       ),
                     ),
                     const Gap(8),
-                    const Text(
+                    Text(
                       "10 Mins",
-                      style: TextStyle(
+                      style: GoogleFonts.roboto(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),

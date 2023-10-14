@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hero_case/widgets/bottom_nav_bar.dart';
 import 'package:hero_case/widgets/exercise_part.dart';
 import 'package:hero_case/widgets/feature_container.dart';
@@ -58,25 +59,25 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Align(
+            Align(
               alignment: Alignment.centerLeft,
               child: Padding(
-                padding: EdgeInsets.only(left: 16),
+                padding: const EdgeInsets.only(left: 16),
                 child: Text(
                   'Hello, Sarah Rose',
-                  style: TextStyle(
+                  style: GoogleFonts.roboto(
                     fontSize: 22,
                   ),
                 ),
               ),
             ),
-            const Align(
+            Align(
               alignment: Alignment.centerLeft,
               child: Padding(
-                padding: EdgeInsets.only(left: 16),
+                padding: const EdgeInsets.only(left: 16),
                 child: Text(
                   'How are you feeling today?',
-                  style: TextStyle(
+                  style: GoogleFonts.roboto(
                     fontSize: 20,
                   ),
                 ),

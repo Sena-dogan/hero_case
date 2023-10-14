@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FeelingBubble extends StatelessWidget {
   const FeelingBubble({super.key, required this.text});
@@ -23,7 +24,7 @@ class FeelingBubble extends StatelessWidget {
           SizedBox(
             child: Text(
               text,
-              style: const TextStyle(color: Colors.black),
+              style: GoogleFonts.roboto(color: Colors.black),
             ),
           ),
         ],

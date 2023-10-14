@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ExerciseCategory extends StatelessWidget {
   final Color color;
@@ -26,12 +27,13 @@ class ExerciseCategory extends StatelessWidget {
       child: Center(
         child: Text(
           title,
-          style: const TextStyle(
+          style: GoogleFonts.roboto(
             fontSize: 16,
             fontWeight: FontWeight.w500,
             color: Colors.black,
           ),
         ),
-      ),);
+      ),
+    );
   }
 }
