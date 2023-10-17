@@ -14,7 +14,7 @@ class ExercisePart extends StatelessWidget {
     const color4 = Color.fromARGB(255, 188, 234, 255);
     Size size = MediaQuery.of(context).size;
     return SizedBox(
-      height: size.height * 0.4,
+      height: size.height * 0.16,
       width: size.width * 0.9,
       child: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
