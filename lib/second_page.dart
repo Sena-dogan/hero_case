@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hero_case/home_page.dart';
 import 'package:hero_case/widgets/bottom_nav_bar.dart';
 
@@ -9,7 +10,7 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
     final Brightness brightness = Theme.of(context).colorScheme.brightness;
 
     return Scaffold(
@@ -52,6 +53,38 @@ class SecondPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const BottomNavBar(),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Text(
+                  'Hello, Sarah Rose',
+                  style: GoogleFonts.roboto(
+                    fontSize: 22,
+                  ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Text(
+                  'How are you feeling today?',
+                  style: GoogleFonts.roboto(
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+            Gap(size.height * 0.01),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -11,7 +11,6 @@ class FeatureContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: 190,
       width: size.width * 0.9,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -47,7 +46,7 @@ class FeatureContainer extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                const Gap(14),
+                const Spacer(),
                 Row(
                   children: [
                     Container(
@@ -73,6 +72,7 @@ class FeatureContainer extends StatelessWidget {
                     ),
                   ],
                 ),
+                const Gap(8),
               ],
             ),
           ],
